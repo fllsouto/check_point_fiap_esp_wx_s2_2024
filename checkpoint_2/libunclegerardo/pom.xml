@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>libunclegerardo</name>
   <url>http://maven.apache.org</url>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,4 +16,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <mainClass>checkpoint2.App</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
